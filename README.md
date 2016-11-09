@@ -1,0 +1,2 @@
+# sjakki
+Chess in Scala
