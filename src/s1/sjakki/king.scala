@@ -1,5 +1,6 @@
 package s1.sjakki
 
-class king {
+
+class king(team: Team) extends Nappula(team) {
   
 }
