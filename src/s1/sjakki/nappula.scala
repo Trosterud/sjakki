@@ -1,5 +1,7 @@
 package s1.sjakki
 
-class nappula(team: Team) extends Team(team) {
+abstract class nappula(team: Team) extends Team(team) {
+  
+  def: move()
   
 }
