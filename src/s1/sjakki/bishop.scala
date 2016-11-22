@@ -17,7 +17,7 @@ class bishop (name: String, attemptMove: Coords)  {
           } else if (!this.world.elementAt(attemptMove).NAPPULA.isDefined) { //ruutu on tyhjä(huomaa huutomerkki)
             this.location = attemptMove //LIIKUTAAN RUUTUUN
           } else println("Can't move!")
-        }
+        } else ("Rule violation") //siirto ei ole sääntöjen mukainen
 }
 
 
