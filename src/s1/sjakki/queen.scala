@@ -41,10 +41,10 @@ while (compassIndex <= 3 && isOkToMove == false) {
     firstEnemy = false
 }
 //Käy läpi kaikki TOWERIN  ilmansuunnat
-  var compassIndex = 0
+  compassIndex = 0
   while (compassIndex <= 3 && isOkToMove == false) {
       ilmansuunta = compass(compassIndex)
-        //Tämä pätkä liikuttaa checkSquarea diagonaalisti kunnes löytyy ruutu joka ei ole tyhjä (tai seinö?)
+        //Tämä pätkä liikuttaa checkSquarea kunnes löytyy ruutu joka ei ole tyhjä (tai seinö?)
         do {
           checkSquare = checkSquare.neighbor(ilmansuunta)//liikutetaan tarkastusruutua
             if (this.world.elementAt(checkSquare).NAPPULA.team != this.team) { //jos checkSquaressa on vihu, niin muuttaa trueksi, jolloin otetaan seuraava ilmansuunta, mutta ensimmäinen kohdattu vihu on sallitulla liikealueella
