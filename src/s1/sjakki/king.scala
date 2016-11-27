@@ -29,6 +29,7 @@ def canMove(attemptMove): Boolean = { //ONKO SIIRTO SÄÄNTÖJEN MUKAINEN, jos o
       compassIndex = compassIndex + 1
   }
   //Towerin ilmansuunnille
+  compassIndex = 0
   while (compassIndex <= 3 && isOkToMove == false) {
       ilmansuunta = compass(compassIndex)
       checkSquare = checkSquare.neighbor(ilmansuunta)//liikutetaan tarkastusruutua
