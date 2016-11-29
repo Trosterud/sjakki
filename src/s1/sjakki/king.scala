@@ -33,7 +33,7 @@ def canMove(attemptMove): Boolean = { //ONKO SIIRTO SÄÄNTÖJEN MUKAINEN, jos o
   while (compassIndex <= 3 && isOkToMove == false) {
       ilmansuunta = compass(compassIndex)
       checkSquare = checkSquare.neighbor(ilmansuunta)//liikutetaan tarkastusruutua
-              if (this.world.elementAt(checkSquare) == attemptMove) { //ONKOHAN ATTEMPTMOVE "ELEMENTAT"???
+              if (this.world.elementAt(checkSquare) == attemptMove) {
               isOkToMove = TRUE //attemptMove löytyi sallitulta alueelta. Palautetaan TRUE ja lopetetaan etsintä
               }
         checkSquare = this.location
