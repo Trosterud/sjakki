@@ -30,6 +30,7 @@ class Knight (name: String, attemptMove: Coords, team: Team) extends Nappula(tea
             }
           //tarkastetaan vasemman puoleiset ruudut
           vasemmalle = (compassIndex + 3) % compass.length
+          checkSquare = checkSquare.neighbor(compass(vasemmalle))
             if (this.world.elementAt(checkSquare) == attemptMove) {
             isOkToMove = TRUE //attemptMove löytyi sallitulta alueelta. Palautetaan TRUE ja lopetetaan etsintä
             }
