@@ -1,4 +1,2 @@
 # sjakki
-Chess in Scala
-
-Very old project for school
+Our implementation for Chess in Scala
